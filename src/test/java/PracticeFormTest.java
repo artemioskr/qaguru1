@@ -21,6 +21,15 @@ public class PracticeFormTest {
         $(".react-datepicker__year-select").$(byValue("1994")).click();
         $(".react-datepicker__month-select").$(byValue("0")).click();
         $(".react-datepicker__month").$(byText("5")).click();
+        $("#subjectsInput").setValue("English").pressEnter();
+        $(byText("Sports")).click();
+        $("#currentAddress").setValue("moscow,1,3,2");
+        $("#state").click();
+        $("#stateCity-wrapper").$(byText("NCR")).click();
+        $("#city").click();
+        $("#stateCity-wrapper").$(byText("Delhi")).click();
+//        Thread.sleep(1000);
+//        $(byText("Select State")).setValue("NCR").pressEnter();
 
 
 
