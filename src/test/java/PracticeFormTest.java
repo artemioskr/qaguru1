@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class PracticeFormTest {
 
     @Test
-    public void fillFieldsPracticeForm() throws InterruptedException {
+    public void fillFieldsPracticeForm() {
 
         open("https://demoqa.com/automation-practice-form");
         $("#firstName").setValue("Alexandr");
@@ -28,15 +28,6 @@ public class PracticeFormTest {
         $("#stateCity-wrapper").$(byText("NCR")).click();
         $("#city").click();
         $("#stateCity-wrapper").$(byText("Delhi")).click();
-//        Thread.sleep(1000);
-//        $(byText("Select State")).setValue("NCR").pressEnter();
-
-
-
-
-        Thread.sleep(1000);
-
-
 
     }
 }
